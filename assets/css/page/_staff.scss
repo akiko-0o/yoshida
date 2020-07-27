@@ -1,0 +1,40 @@
+body.staff {
+    text-align: center;
+    .employee{
+        h1 {
+            padding-top: 105px;
+            padding-bottom: 110px;
+        }
+        dt {
+            font-size: 5px;
+            padding-bottom: 16px;
+            letter-spacing: 0.3em;
+        }
+        a {
+            text-decoration: none;
+            color: #231815;
+            letter-spacing: 0.4em;
+            &:hover {
+                color: #5A5250;
+            }
+        }
+        dd {
+            &:nth-child(1){
+                font-size: 42px;
+            }
+            &:nth-child(2){
+                font-size: 15px;
+                padding-top: 12px;
+            }
+        }
+        &__mark {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            img {
+                width: 1.2%;
+            }
+        }
+
+    }
+
+}

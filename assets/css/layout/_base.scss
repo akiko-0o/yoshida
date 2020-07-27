@@ -1,0 +1,25 @@
+// Font
+$gothic: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+$noto: 'Noto Serif JP', serif;
+
+// color
+$orange: #EA5513;
+$black: #000000;
+
+
+
+
+
+.inner {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 3px $orange solid;
+    margin: -2px;
+}
+a {
+    text-decoration: none;
+}
