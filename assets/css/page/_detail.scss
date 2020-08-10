@@ -1,0 +1,70 @@
+.detail {
+    background-image: url(/assets/img/index/bg_paper01.png);
+
+    .table {
+        &__img {
+            text-align: center;
+            padding-top: 35px;
+            padding-bottom: 10px;
+            img {
+                width: 100%;
+            }
+        }
+        &__back {
+            padding-top: 130px;
+            img {
+            width: 100%;
+            }
+        }
+        &__en {
+            padding-top: 80px;
+            padding-bottom: 53px;
+            img {
+                float: right;
+                width: 55%;
+            }
+
+        }
+        &__li {
+
+            img {
+                width: 100%;
+                padding-bottom: 15px;
+            }
+        }
+
+    }
+
+    
+    h2 {
+        padding-top: 80px;
+        text-align: center;
+        img {
+            width: 98%;
+        }
+    }
+
+    time {
+    font-size: 10px;
+    color: black;
+    font-weight: 550;
+    }
+    
+    h3 {
+        font-size: 18.5px;
+        letter-spacing: 0.05em;
+        line-height: 1.5em;
+        color: black;
+        font-weight: 550;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    p {
+        font-size: 12.5px;
+        letter-spacing: 0.08em;
+        font-weight: 550;
+        color: black;
+        line-height: 2.2em;
+        padding-bottom: 50px;
+    }
+}

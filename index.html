@@ -10,7 +10,7 @@
 </head>
 <body class="index">
 
-    <div class="hamburger">
+    <div class="hamburger" id="hamburger">
         <a class="hamburger__button" href="#">
             <span></span>
             <span></span>
@@ -51,7 +51,7 @@
         </nav>
     </div>
 
-    <section class="">
+    <section class="" id="slide">
         <div class="slide">
             <ul class="slide__wrap">
                 <li class="slide__show">
@@ -96,23 +96,23 @@
                     <time>2020-04-18 10:25:32</time>
                     <dt>コロナウイルス感染拡大防止に関する取り組み</dt>
                     <dd>平素よりヨシダオートサービスをご愛顧いただき、誠にありがとうございます。新型コロナウイルスの感染拡大にと…</dd>
-                    <dd><a href="/news/news.html" class="readmore">READ MORE</a></dd>
+                    <dd><a href="/news/detail.html" class="readmore_top">READ MORE</a></dd>
                 </dl>
                 <dl>
                     <time>2020-03-16 16:52:26</time>
                     <dt>新型コロナウイルスに対する当社の対応について</dt>
                     <dd>はじめに、このたびの新型コロナウイルスに罹患された皆様と、感染拡大により生活に影響を受けられている皆様…</dd>
-                    <dd><a href="/news/news.html" class="readmore">READ MORE</a></dd>
+                    <dd><a href="/news/news.html" class="readmore_top">READ MORE</a></dd>
                 </dl>
                 <dl>
                     <time>2019-12-23 10:11:40</time>
                     <dt>年末年始　営業時間変更のお知らせ</dt>
                     <dd>日頃よりヨシダオートサービスをご愛顧いただき、誠にありがとうございます。誠に勝手ながら、年末年始に</dd>
-                    <dd><a href="/news/news.html" class="readmore">READ MORE</a></dd>
+                    <dd><a href="" class="readmore_top">READ MORE</a></dd>
                 </dl>
             </tbody>
             <button class="news__list">
-                <a href="">ニュースリストへ</a>
+                <a href="/news/news.html">ニュースリストへ</a>
             </button>
         </div>
         <div class="news__img">
@@ -138,7 +138,7 @@
                     私の幼少時代、やっと言葉が話せるようになったぐらいの頃、<br>みんなが豊かで幸せだった時代です。<br>社員は自分の仕事と会社に誇りを持ち、<br>会社は社員を家族のように大切にしていました。<br>お客様一人一人と心の通うお付き合いをし、<br>お客様に起こったことはまるで自分のことのように親<br>身になっていました。
                 </p>
                 <button class="greeting__list">
-                    <a href="">続きを読む</a>
+                    <a href="/greeting/greeting.html">続きを読む</a>
                 </button>
             </div>
         </div>
@@ -192,7 +192,7 @@
                 </dl>
             </tbody>
             <button class="outline__list">
-                <a href="">詳細ページへ</a>
+                <a href="/outline/index.html">詳細ページへ</a>
             </button>
         </div>
         <div class="outline__img">
@@ -233,7 +233,7 @@
                     </li>
                 </ul>
                 <button class="branding__list">
-                    <a href="">詳細ページへ</a>
+                    <a href="/branding/branding.html">詳細ページへ</a>
                 </button>
             </div>
             <h4 class="branding__en">
@@ -345,6 +345,10 @@
         </div>
         <a href="">プライバシーポリシー</a>
         <span>&copy;YOSHIDA AUTO SERVICE ALL Rights Reserved</span>
+
+        <div class="footer__box">
+            <a href="#slide" class="footer__arrow"></a>
+        </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

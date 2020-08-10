@@ -41,17 +41,21 @@ body.index {
         line-height: 0.9em;
         color: $orange;
     }
-    .arrow{
+
+
+
+    .arrow {
         display: block;
         margin: 0 auto;
-        width: 15px;
-        height: 15px;
-        border: 3px solid;
-        border-color:  transparent transparent $black $black;
-        transform: rotate(-45deg);
-        margin-top: 20px;
+        width: 14px;
+        height: 14px;
+        border-bottom: 3px solid #000;
+        border-right: 3px solid #000;
+        transform: rotate(45deg);
+        margin-top: 28px;
         margin-bottom: 40px;
     }
+
     .news {
         h2 {
             text-align: center;
@@ -91,7 +95,7 @@ body.index {
             padding-bottom: 15px;
 
         }
-        .readmore {
+        .readmore_top {
             position: absolute;
             top: 102px;
             right: 0;
@@ -103,10 +107,14 @@ body.index {
             }
         }
         &__list {
-            position: static;
             display: block;
-            margin: 20px auto;
+            position: relative;
             width: 270px;
+            text-align: center;
+            text-decoration: none;
+            color: #1B1B1B;
+            border:1px solid #1B1B1B;
+            margin: 20px auto;
             margin-bottom: 140px;
             background-color: transparent;
             padding: 6px 40px;
@@ -145,8 +153,14 @@ body.index {
         }
         &__list {
             display: block;
+            position: relative;
+            width: 270px;
+            text-align: center;
+            text-decoration: none;
+            color: #1B1B1B;
+            border:1px solid #1B1B1B;
             margin: 20px auto;
-            width: 220px;
+            margin-bottom: 140px;
             background-color: transparent;
             padding: 6px 40px;
             a {
@@ -220,6 +234,24 @@ body.index {
                 bottom: 1px;
             }
         }
+        &__list {
+            display: block;
+            position: relative;
+            width: 270px;
+            text-align: center;
+            text-decoration: none;
+            color: #1B1B1B;
+            border:1px solid #1B1B1B;
+            margin: 20px auto;
+            margin-bottom: 140px;
+            background-color: transparent;
+            padding: 6px 40px;
+            a {
+                text-decoration: none;
+                color: $black;
+                width: 200px;            
+            }
+        }
     }
     .branding {
         &__book {
@@ -271,8 +303,22 @@ body.index {
             }
         }
         &__list {
-            margin-bottom: 135px;
-            margin-top: 60px;
+            display: block;
+            position: relative;
+            width: 270px;
+            text-align: center;
+            text-decoration: none;
+            color: #1B1B1B;
+            border:1px solid #1B1B1B;
+            margin: 20px auto;
+            margin-bottom: 140px;
+            background-color: transparent;
+            padding: 6px 40px;
+            a {
+                text-decoration: none;
+                color: $black;
+                width: 200px;            
+            }
         }
         &__en {
             position: relative;

@@ -1,0 +1,75 @@
+.gretting {
+    
+    h3 {
+        margin-bottom: 50px;
+        img {
+            width: 88%;
+        }
+    }
+
+    .gre {
+        h2 {
+            margin-bottom: 25px;
+        }
+        img {
+            width: 100%;
+        }
+        &__img {
+            margin: 0 auto 25px;
+            width: 85%;
+
+        }
+        &__content {
+            span {
+                font-size: 18px;
+                font-weight: 600;
+                display: block;
+                padding-bottom: 15px;
+            }
+            p {
+                font-size: 11.3px;
+                font-weight: 550;
+                letter-spacing: 0.01em;
+                &:nth-child(2){
+                    margin-bottom: 10px;
+                    line-height: 1.8em;
+                }
+                &:nth-child(3){
+                    font-size: 14px;
+                    padding-bottom: 7px;
+                }
+                &:nth-child(4){
+                    font-size: 12.5px;
+                    padding-bottom: 50px;
+                }
+            }
+        }
+        &__people {
+            padding-bottom: 20px;
+        }
+        ul {
+            padding-bottom: 25px;
+            img {
+                margin-bottom: 30px;
+            }
+            span {
+                display: block;
+                padding-bottom: 50px;
+                font-size: 12.5px;
+                font-weight: 550;
+                line-height: 2em;
+            }
+        }
+        &__en {
+            text-align: right;
+            img {
+                width: 90%;
+            }
+        }
+        
+    }
+    .table__back {
+        padding-bottom: 50px;
+    }
+
+}

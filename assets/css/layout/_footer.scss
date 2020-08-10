@@ -48,5 +48,23 @@
         padding-bottom: 40px;
     }
 
+    &__box {
+        background-color: #ffffff;
+        height: 60px;
+        width: 90px;
+        margin: 0 auto;
+        a {
+            display: inline-block;
+            width: 10px;
+            border-top: 2.3px solid #888888;
+            border-left: 2.3px solid #888888;
+            transform: rotate(45deg);
+            margin-top: 24px;
+            padding: 5px;
+
+        }
+    }
+
+
 
 }

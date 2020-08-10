@@ -6,13 +6,8 @@ $noto: 'Noto Serif JP', serif;
 $orange: #EA5513;
 $black: #000000;
 
-
-
-
-
-.inner {
-    margin-left: 20px;
-    margin-right: 20px;
+body {
+    background-image: url(/assets/img/index/bg_paper01.png);
 }
 
 hr {
@@ -20,6 +15,37 @@ hr {
     border-top: 3px $orange solid;
     margin: -2px;
 }
+.u__line {
+    border: none;
+    border-top: 11.5px $orange solid;
+    margin: -2px;
+}
+.dot {
+    clear: both;
+    border-top: 1px dotted black;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+.inner {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
 a {
     text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
 }

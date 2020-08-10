@@ -26,13 +26,22 @@ $(function() {
     }
   });
 
-  $(window).on('scroll', function(){
-    var docHeight = $(document).innerHeight(), //ドキュメントの高さ
-        windowHeight = $(window).innerHeight(), //ウィンドウの高さ
-        pageBottom = docHeight - windowHeight; //ドキュメントの高さ - ウィンドウの高さ
-    if(pageBottom <= $(window).scrollTop()) {
-      document.getElementsByClassName("hamburger").style.display ="none";
-    }
+//   $(window).on('scroll', function(){
+//     var docHeight = $(document).innerHeight(), //ドキュメントの高さ
+//         windowHeight = $(window).innerHeight(), //ウィンドウの高さ
+//         pageBottom = docHeight - windowHeight - 10; //ドキュメントの高さ - ウィンドウの高さ
+//     if(pageBottom <= $(window).scrollTop()) {
+//       document.getElementById("hamburger").style.display = "none";
+//     }
+// });
+$(window).bind("scroll", function() {
+	scrollHeight = $(document).height();
+	scrollPosition = $(window).height() + $(window).scrollTop();
+	if ( (scrollHeight - scrollPosition) / scrollHeight <= 0.104) {
+		document.getElementById("hamburger").style.display = "none";
+	} else {
+		document.getElementById("hamburger").style.display = "block";
+	}
 });
 
 });

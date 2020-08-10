@@ -8,13 +8,16 @@
 
 // // component
 @import 'component/hamburger';
+@import 'component/readmore';
 
 
 // page
 @import 'page/index';
-@import 'page/philosophy';
-@import 'page/staff';
-@import 'page/company';
-@import 'page/works';
+@import 'page/branding';
+@import 'page/contact';
+@import 'page/greeting';
+@import 'page/news';
 @import 'page/slick';
-
+@import 'page/outline';
+@import 'page/recruit';
+@import 'page/detail'
