@@ -982,6 +982,10 @@ body.slick span {
   width: 40%;
 }
 
+.outline .out__corporate_box {
+  margin-bottom: 20px;
+}
+
 .outline .out__corporate img {
   width: 100%;
   margin-bottom: 30px;
@@ -992,54 +996,222 @@ body.slick span {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 10px;
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 550;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  line-height: 1.6em;
+}
+
+.outline .out__corporate dt {
+  width: 30%;
 }
 
 .outline .out__corporate dd {
-  width: 250px;
+  width: 70%;
 }
 
-body.staff {
+.outline .out__corporate iframe {
+  margin-bottom: 80px;
+}
+
+.outline .out__history img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.outline .out__history p {
+  font-size: 12px;
+  line-height: 1.5em;
+  font-weight: 550;
+  margin-bottom: 40px;
+}
+
+.outline .out__history th {
+  font-size: 13px;
+  font-weight: 550;
+  color: #EA5513;
+  line-height: 1em;
+  position: relative;
+}
+
+.outline .out__history th::after {
+  content: "";
+  width: 5px;
+  height: 70%;
+  margin: 0 auto;
+  background-color: #000;
+  border-radius: 1px;
+  position: absolute;
+  top: 21px;
+  left: 53%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.outline .out__history td {
+  font-size: 13px;
+}
+
+.outline .out__history .month {
+  width: 35px;
+  margin-left: 5px;
+  text-align: right;
+}
+
+.outline .out__history .txt {
+  line-height: 1.4em;
+  width: 200px;
+}
+
+.outline .out__history_box {
+  margin-bottom: 5vw;
+  width: 100%;
+}
+
+.outline .out__chart img {
+  width: 90%;
+  margin-bottom: 70px;
+}
+
+.outline .table__back img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.outline .table__en img {
+  width: 80%;
+  float: right;
+}
+
+.outline .footer {
+  clear: both;
+}
+
+.recruit .top_logo {
+  margin-bottom: 60px;
+}
+
+.recruit .top_logo img {
+  width: 80%;
+}
+
+.recruit .rec img {
+  width: 100%;
+}
+
+.recruit .rec__recruit h2 {
+  margin-bottom: 40px;
+}
+
+.recruit .rec__recruit ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 55px;
+}
+
+.recruit .rec__recruit li {
+  width: calc(100% / 3);
+}
+
+.recruit .rec__box_items h4 {
+  margin-bottom: 18px;
+  margin-top: 75px;
+}
+
+.recruit .rec__box_img {
+  margin-bottom: 20px;
+}
+
+.recruit .rec__working img {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.recruit .rec__working iframe {
+  margin-bottom: 90px;
+}
+
+.recruit .rec__careers img {
+  margin-bottom: 30px;
+}
+
+.recruit .rec__careers dl {
+  border: 1px dotted #000000;
+  font-size: 13px;
+  margin-bottom: 90px;
+}
+
+.recruit .rec__careers dt {
+  background-color: #EA5513;
+  color: #ffffff;
+  padding: 10px 15px 10px;
+}
+
+.recruit .rec__careers dd {
+  padding: 20px;
+  line-height: 1.5em;
+  font-weight: 550;
+}
+
+.recruit .rec__entry p {
+  font-size: 12.5px;
+  line-height: 1.5em;
+  margin-bottom: 15px;
+}
+
+.recruit .rec__entry a {
+  color: #EA5513;
+}
+
+.recruit .rec__entry h4 {
+  margin-bottom: 25px;
+}
+
+.recruit .rec__entry li {
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 25px;
+}
+
+.recruit .rec__entry li:last-child {
+  margin-bottom: 70px;
+}
+
+.recruit .table__back {
   text-align: center;
+  margin-bottom: 40px;
 }
 
-body.staff .employee h1 {
-  padding-top: 105px;
-  padding-bottom: 110px;
+.recruit .table__back img {
+  width: 90%;
 }
 
-body.staff .employee dt {
-  font-size: 5px;
-  padding-bottom: 16px;
-  letter-spacing: 0.3em;
+.recruit .gre__en img {
+  float: right;
+  width: 75%;
 }
 
-body.staff .employee a {
-  text-decoration: none;
-  color: #231815;
-  letter-spacing: 0.4em;
+.recruit .footer {
+  clear: both;
 }
 
-body.staff .employee a:hover {
-  color: #5A5250;
+.recruit #acMenu dt {
+  margin-top: 8px;
+  display: block;
+  cursor: pointer;
 }
 
-body.staff .employee dd:nth-child(1) {
-  font-size: 42px;
-}
-
-body.staff .employee dd:nth-child(2) {
-  font-size: 15px;
-  padding-top: 12px;
-}
-
-body.staff .employee__mark {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-body.staff .employee__mark img {
-  width: 1.2%;
+.recruit #acMenu dd {
+  font-weight: 550;
+  font-size: 12.5px;
+  display: none;
+  margin-top: 10px;
+  line-height: 1.5em;
+  letter-spacing: 0.05em;
 }
 
 .detail {

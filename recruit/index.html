@@ -3,37 +3,491 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STAFF</title>
+    <title>採用情報</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body class="staff">
-    <header class="header">
-        <div class="header__logo">
-            <a href="/">
-                <img src="/assets/img/white-logo.svg" alt="providence" onmouseover="this.src='/assets/img/on.svg'" onmouseout="this.src='/assets/img/white-logo.svg'">
-            </a>
+<body class="recruit">
+    <div class="hamburger" id="hamburger">
+        <a class="hamburger__button" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <nav class="hamburger__wrap">
+            <div class="hamburger__logo">
+                <img src="/assets/img/index/yoshida_logo.png" alt="">
+            </div>
+            <ul class="hamburger__nav">
+                <li>
+                    <a href="#">ホーム</a>
+                </li>
+                <li>
+                    <a href="#">新着情報</a>
+                </li>
+                <li>
+                    <a href="#">代表挨拶</a>
+                </li>
+                <li>
+                    <a href="#">企業情報</a>
+                </li>
+                <li>
+                    <a href="#">事業紹介</a>
+                </li>
+                <li>
+                    <a href="#">採用情報</a>
+                </li>
+                <li>
+                    <a href="#">問い合わせ</a>
+                </li>
+            </ul>
+            <div class="hamburger__sns">
+                <img src="/assets/img/index/insta.svg" alt="インスタグラム">
+                <img src="/assets/img/index/fasebook.svg" alt="フェイスブック">
+            </div>
+            <a href="" class="hamburger__privacy">プライバシーポリシー</a>
+        </nav>
+    </div>
+
+    <hr class="u__line">
+    <h3 class="top_logo">
+        <img src="/assets/img/recruit/recrute_02.png" alt="recruit">
+    </h3>
+
+    <div class="rec inner">
+        <div class="rec__recruit">
+            <h2>
+                <img src="/assets/img/recruit/recruit_works_03.png" alt="仕事内容">
+            </h2>
+
+            <ul>
+                <li>
+                    <a href="#eigyou">
+                        <img src="/assets/img/index/eigyou.png" alt="営業">
+                    </a>
+                </li>
+                <li>
+                    <a href="#seibi">
+                        <img src="/assets/img/index/car.png" alt="自動車整備士">
+                    </a>
+                </li>
+                <li>
+                    <a href="#front">
+                        <img src="/assets/img/index/front.png" alt="フロント">
+                    </a>
+                </li>
+                <li>
+                    <a href="#customer">
+                        <img src="/assets/img/index/kasutama.png" alt="カスタマー">
+                    </a>
+                </li>
+                <li>
+                    <a href="#kanri">
+                        <img src="/assets/img/index/kanri.png" alt="管理部">
+                    </a>
+                </li>
+                <li>
+                    <a href="#hoken">
+                        <img src="/assets/img/index/hoken.png" alt="保険部">
+                    </a>
+                </li>
+            </ul>
         </div>
-        <ul class="header__nav">
+        <div class="rec__box">
+            <ul>
+                <li>
+                    <div class="rec__box_items" id="eigyou">
+                        <h4>
+                            <img src="/assets/img/recruit/eigyou_06.png" alt="営業">
+                        </h4>
+                        <div class="rec__box_img">
+                            <img src="/assets/img/recruit/photo_07.png" alt="">
+                        </div>
+                        <dl id="acMenu">
+                            <dt>
+                              <img src="/assets/img/recruit/aaa_03.png" alt="">
+                            </dt>
+                            <dd>
+                              地域のお客様に頼っていただけることが一番の楽しさであり、やりがいです。<br>ヨシダオートサービスの営業は、「自動車を販売して終わり」ではなく、地域のお客様にとっての自動車のかかりつけ医であることを目標としていて、カーライフに合わせた自動車も提案から車検等の点検、万が一のトラブル時のサポートまで一貫して行っています。<br>日々お客様の為に一生懸命営業している中で「あなたに相談してよかった」と言っていただけた時は、やっぱり嬉しいですね。
+                            </dd>
+                            <dt>
+                                <img src="/assets/img/recruit/bbb_03.png" alt="">
+                              </dt>
+                            <dd>
+                                ヨシダオートサービスのスタッフは、どこまでもプロフェッショナルです。<br>
+                                故に、新卒で入社すると、先輩の営業が壁になることもあるかもしれません。<br>
+                                ですが、その先輩たちも同じ苦労を乗り越えて今があります。<br>
+                                厳しさを乗り越えた先には、明るい未来が待っています！
+                            </dd>
+                            <dt>
+                              <img src="/assets/img/recruit/ccc_03.png" alt="">
+                            </dt>
+                            <dd>
+                                地域1番の元気な挨拶と明るい笑顔！これに尽きます！
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <div class="rec__box_items" id ="seibi">
+                        <h4>
+                            <img src="/assets/img/recruit/car_06.png" alt="自動車整備士">
+                        </h4>
+                        <div class="rec__box_img">
+                            <img src="/assets/img/recruit/car_img_06.png" alt="">
+                        </div>   
+                          <dl id="acMenu">
+                              <dt>
+                                <img src="/assets/img/recruit/aaa_03.png" alt="">
+                              </dt>
+                              <dd>
+                                整備だけでなく、直接お客様とのコミュニケーションを図れる機会がある点です。<br>
+                                一般的な自動車販売店では、フロントに立つのは営業、技術まわりは整備士というのがよくある形ですが、ヨシダオートサービスでは整備士が直接お客様のお話を伺う機会があります。<br>
+                                どんな想いでそのお車に乗られているか、どれだけクルマを愛されているかというお話を聞くと、整備する側も気合いが入りますよね。
+                              </dd>
+                              <dt>
+                                <img src="/assets/img/recruit/bbb_03.png" alt="">
+                              </dt>
+                              <dd>
+                                ただ言われたことをやっているだけでは、ヨシダオートサービスの整備士は務まりません。<br>
+                                いかに安全かつスピーディーに整備ができるかを自ら考え、コミュニケーションを取る能力が求められます。
+                              </dd>
+                              <dt>
+                                <img src="/assets/img/recruit/ddd_03.png" alt="">
+                              </dt>
+                              <dd>
+                                スピードとスタッフの人間性ですね！<br>
+                                キビキビと動くことにかけては、大阪でも指折りだと思います。<br>
+                                それから、スタッフみんな気を配れるいい人ばかりで、非常に雰囲気がいいです。<br><br>
+                                これは整備士に限らず、ヨシダオートサービス全体の社風がそうだからかもしれません。
+                              </dd>
+                          </dl>
+                    </div>
+                </li>
+                <li>
+                    <div class="rec__box_items" id="front">
+                        <h4>
+                            <img src="/assets/img/recruit/front_06.png" alt="フロント">
+                        </h4>
+                        <div class="rec__box_img">
+                            <img src="/assets/img/recruit/front_img_06.png" alt="">
+                        </div>
+                          <dl id="acMenu">
+                              <dt>
+                                <img src="/assets/img/recruit/aaa_03.png" alt="">
+                              </dt>
+                              <dd>
+
+                                ありきたりですが、お客様が笑顔になってくれる瞬間にこの仕事の喜びを感じます。<br>
+                                カフェやおしゃれな店舗内装など、同業他社にはないような充実した設備なので、自信を持って「また来てください！」と言うことができます。<br>
+                                そうしてお客様に顔を覚えていただいて、いつの間にか仲良くなってることが多かったりするんです。<br>
+                                自分の仕事が少しでもお客様や会社のためになっているんだなと実感できる瞬間ですね。
+                              </dd>
+                              <dt>
+                                <img src="/assets/img/recruit/bbb_03.png" alt="">
+                              </dt>
+                              <dd>
+                                ありがたいことに、毎日非常にたくさんのお客様にご来店いただけていますが、逆に言うと、それだけこなす仕事も多くなります。<br>
+                                時間をうまく使わないと、お客様を待たせてしまうことになるので、常に頭を回さないといけません。
+                              </dd>
+                              <dt>
+                                  <img src="/assets/img/recruit/eee_03.png" alt="">
+                              </dt>
+                              <dd>
+                                「おもてなし」の精神ですね。どんなに忙しくても笑顔を忘れず、お客様にとって居心地の良い環境を提供する心を大事にしています。
+                              </dd>
+                          </dl>
+                    </div>
+                </li>
+                <li>
+                    <div class="rec__box_items" id="customer">
+                        <h4>
+                            <img src="/assets/img/recruit/custymer_06.png" alt="カスタマー">
+                        </h4>
+                        <div class="rec__box_img">
+                            <img src="/assets/img/recruit/custmer_06.png" alt="">
+                        </div>
+                          <dl id="acMenu">
+                              <dt>
+                                <img src="/assets/img/recruit/aaa_03.png" alt="">
+                              </dt>
+                              <dd>
+                                営業全体がチーム一眼となって目標を達成したときに楽しさを感じます。<br>
+                                営業事務は営業とコミュニケーションをとり業務を共有し、サポートしていくのが主な仕事です。営業事務がいることで力が増し、チームワークを発揮して目標を達成できたときはとてもやりがいを感じます。
+                              </dd>
+                              <dt>
+                                  <img src="/assets/img/recruit/bbb_03.png" alt="">
+                              </dt>
+                              <dd>
+                                様々な業務が様々なタイミングでふってくることだと思います。<br>
+                                きちんと業務の整理をしていないと何から手をつけていいかわからない状況になりかねません。それぞれの業務も優先順位を常に意識していくことが大切です。
+                              </dd>
+                              <dt>
+                                  <img src="/assets/img/recruit/fff_03.png" alt="">
+                              </dt>
+                              <dd>
+                                正直さ、ですね。<br>
+                                営業から言われたことだけをやるような仕事の仕方ではなく、正直に自分の感じたことを相手に伝え、より良い仕事となるように心がけています。
+                              </dd>
+                          </dl>
+                    </div>
+                </li>
+                <li>
+                    <div class="rec__box_items" id="kanri">
+                        <h4>
+                            <img src="/assets/img/recruit/kanri_06.png" alt="管理部">
+                        </h4>
+                        <div class="rec__box_img">
+                            <img src="/assets/img/recruit/kanri_img_09.png" alt="">   
+                        </div>
+                          <dl id="acMenu">
+                              <dt>
+                                <img src="/assets/img/recruit/ggg_03.png" alt="">
+                              </dt>
+                              <dd>
+                                元々は自動車の整備業務をしていて、リーダー、工場長などを経験し、統括本部へ入りました。<br>
+                                会社のために、社員のために、改善できることは何かを現場にいた経験を生かして提案するようにしています。
+                              </dd>
+                              <dt>
+                                  <img src="/assets/img/recruit/hhh_03.png" alt="">
+                              </dt>
+                              <dd>
+                                入社1年目からでも責任ある仕事を任せてもらえるところです。<br>
+                                ただの接客ではなく店舗全体の仕事に関わることで若い社員が早い成長を遂げることができます。<br>
+                                先輩社員も若い社員をしっかり支えていくような社内の空気もとてもいいです。
+                              </dd>
+                              <dt>
+                                  <img src="/assets/img/recruit/iii_03.png" alt="">
+                              </dt>
+                              <dd>
+                                積極的に人とコミュニケーションがとれる人、そして素直な人です。<br>
+                                お客様から同僚まで様々な人と接する職場ですので、人と接する力は欠かせません。<br>
+                                そしてこれは私の持論ですが、上司や同僚の話を素直に受けとめて吸収できる人は成長していけると考えています。<br>
+                                人と積極的に関わって、成長していける人がこの会社では活躍できると思います。
+                              </dd>
+                          </dl>
+                    </div>
+                </li>
+                <li>
+                    <div class="rec__box_items" id="hoken">
+                        <h4>
+                            <img src="/assets/img/recruit/hoken_09.png" alt="保険部">
+                        </h4>
+                        <div class="rec__box_img">
+                            <img src="/assets/img/recruit/hoken_img_09.png" alt="">
+                        </div>
+                          <dl id="acMenu">
+                              <dt>
+                                <img src="/assets/img/recruit/aaa_03.png" alt="">
+                              </dt>
+                              <dd>
+                                営業全体がチーム一眼となって目標を達成したときに楽しさを感じます。<br>
+                                営業事務は営業とコミュニケーションをとり業務を共有し、サポートしていくのが主な仕事です。営業事務がいることで力が増し、チームワークを発揮して目標を達成できたときはとてもやりがいを感じます。
+                              </dd>
+                              <dt>
+                                  <img src="/assets/img/recruit/bbb_03.png" alt="">
+                              </dt>
+                              <dd>
+                                様々な業務が様々なタイミングでふってくることだと思います。<br>
+                                きちんと業務の整理をしていないと何から手をつけていいかわからない状況になりかねません。それぞれの業務も優先順位を常に意識していくことが大切です。
+                              </dd>
+                              <dt>
+                                  <img src="/assets/img/recruit/jjj_03.png" alt="">
+                              </dt>
+                              <dd>
+                                正直さ、ですね。<br>
+                                営業から言われたことだけをやるような仕事の仕方ではなく、正直に自分の感じたことを相手に伝え、より良い仕事となるように心がけています。
+                              </dd>
+                          </dl>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="rec__working">
+            <img src="/assets/img/recruit/working_img_03.png" alt="働き方">
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/gcApftPeRf0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="rec__careers">
+            <img src="/assets/img/recruit/careers_03.png" alt="採用情報">
+            <dl>
+                <dt>募集職種</dt>
+                <dd>営業、自動車整備士、フロント、営業アシスタント</dd>
+                <dt>募集対象</dt>
+                <dd>理系大学院生、理系学部生、文系大学院生、文系学部生、短大生、高専生、専門学校生、既卒者
+                    ※募集対象は2019年3月卒業見込みの方、あるいは卒業後3年以内の方</dd>
+                <dt>募集人数</dt>
+                <dd> 21 〜 25名</dd>
+                <dt>基本給</dt>
+                <dd> 
+                    ＜大卒＞<br>
+                    ・営業：月給230,000円<br>
+                    ・営業アシスタント：月給190,000円<br>
+                    ・整備士：月給230,000円(2級整備士資格保有者)<br>
+                    ・フロント：月給190,000円 <br>
+                    <br>
+                    ＜専門卒・短大卒＞<br>
+                    ・営業：月給220,000円<br>
+                    ・営業アシスタント：月給190,000円<br>
+                    ・整備士：月給230,000円(2級整備士資格保有者)<br>
+                    ・フロント：月給190,000円<br>
+                    <br>
+                    ＜高卒＞<br>
+                    ・営業：月給210,000円<br>
+                    ・営業アシスタント：月給190,000円<br>
+                    ・整備士：月給180,000円<br>
+                    ・フロント：月給180,000円  <br>
+                    <br>
+                    (その他手当・インセンティブあり)</dd>
+                <dt>諸手当</dt>
+                <dd>交通費支給(当社規定有)
+                    勤続手当、資格手当、役職手当、家族手当、住宅手当(最高17,000円)、インセンティブ制度有、結婚出産祝金</dd>
+                <dt>昇給</dt>
+                <dd>年1回＋随時</dd>
+                <dt>賞与</dt>
+                <dd>年2回(7月・12月)(業績によります)</dd>
+                <dt>休日休暇</dt>
+                <dd>週休2日制(シフト制) ※年間休日105日</dd>
+                <dt>待遇・福利厚生・
+                    社内制度</dt>
+                <dd>・社会保険完備<br>
+                    ・制服貸与、社員割引あり<br>
+                    ・実力主義の給与体系・評価制度の導入<br>
+                    ・福利厚生が充実<br>
+                    ・教育・研修制度が充実<br>
+                    ・資格取得支援制度あり<br>
+                    ・産休・育児休暇取得実績あり<br>
+                    ・家賃補助制度あり</dd>
+                <dt>勤務地</dt>
+                <dd>*軽の森*<br>
+                    (なかもず店)大阪府堺市北区長曾根町3083-10<br>
+                    (泉北店)大阪府堺市南区原山台5-10-2<br>
+                    (富田林店)大阪府富田林市若松町西1-1880<br>
+                    (泉大津店)大阪府泉大津市千原町 2-21-16<br>
+                    <br>
+                      *マッハ車検*<br>
+                    (なかもず店)大阪府堺市北区長曾根町3083-1<br>
+                    (堺鉄砲町店)大阪府堺市堺区三宝町4-249<br>
+                    <br>
+                      *軽パーク*<br>
+                    (富田林店)大阪府富田林市若松町西1-1878-1<br>
+                    <br>
+                      *車の森*<br>
+                    (もず店)大阪府堺市北区百舌鳥西之町3-541<br>
+                    (なかもず店)大阪府堺市北区金岡町1377-6<br>
+                    <br>
+                      *新車市場*<br>
+                    (堺店)大阪府堺市堺区三宝町4-250<br>
+                    <br>
+                      *ピッカーズ*<br>
+                    (富田林店)大阪府富田林市若松町東2-6-31
+                </dd>
+                <dt>勤務時間</dt>
+                <dd>営業　9：00～19：00(実働8時間・休憩時間120分)<br>
+                    営業アシスタント・フロント・自動車整備士　9：00～18：00(実働8時間・休憩時間60分)</dd>
+                <dt>
+                    教育・研修制度
+                </dt>
+                <dd>・新入社員研修(マナー研修)<br>
+                    ・営業ロープレ研修<br>
+                    ・保険研修<br>
+                    ・OJT<br>
+                    ・システム研修<br>
+                    ・勉強会
+                </dd>
+            </dl>
+        </div>
+        <div class="rec__entry">
+            <h4>
+                <img src="/assets/img/recruit/entry_03.png" alt="">
+            </h4>
+            <p>
+                下記リンクよりエントリーしてください。<br>
+                ※中途採用でご応募の方は、直接店舗までお電話下さい(<a href="">各店舗の電話番号はこちら</a>)
+            </p>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="/assets/img/recruit/mynav_03.png" alt="マイナビ">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="/assets/img/recruit/rikunav_03.png" alt="リクナビ">
+                        </a>
+                    </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class="table__back">
+        <a href="/">
+            <img src="/assets/img/news/news_foot_06.png" alt="back">
+        </a>
+    </div>
+    <div class="gre__en">
+        <img src="/assets/img/recruit/recruit_logo_03.png" alt="recruit">
+    </div>
+    <footer class="footer">
+        <div class="footer__img">
+            <img src="/assets/img/index/yoshida_logo.png" alt="ヨシダオートサービス">
+        </div>
+        <ul>
             <li>
-                <a href="/philosophy/index.html">PHILOSOPHY</a>
+                <a href="/">
+                    <img src="/assets/img/index/home.svg" alt="">
+                </a>
             </li>
             <li>
-                <a href="../staff/index.html">STAFF</a>
+                <a href="">
+                    <img src="/assets/img/index/shinchakuwhite.svg" alt="">
+                </a>
             </li>
             <li>
-                <a href="#">CONTACT</a>
+                <a href="">
+                    <img src="/assets/img/index/aisatuwhite.svg" alt="">
+                </a>
             </li>
             <li>
-                <a href="../company/index.html">COMPANY</a>
+                <a href="">
+                    <img src="/assets/img/index/kigyouwhite.svg" alt="">
+                </a>
             </li>
             <li>
-                <a href="#">NEWS</a>
+                <a href="">
+                    <img src="/assets/img/index/zigyouwhite.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="/assets/img/index/saiyouwhite.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="/assets/img/index/contactwhite.svg" alt="">
+                </a>
             </li>
         </ul>
-        <div class="header__img">
-            <img src="../assets/img/f.svg" alt="">
+
+        <div class="footer__sns">
+            <img src="/assets/img/index/insta.svg" alt="インスタグラム">
+            <img src="/assets/img/index/fasebook.svg" alt="フェイスブック">
         </div>
-    </header>
-    
+        <a href="">プライバシーポリシー</a>
+        <span>&copy;YOSHIDA AUTO SERVICE ALL Rights Reserved</span>
+
+        <div class="footer__box">
+            <a href="#slide" class="footer__arrow"></a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(function(){
+        $("#acMenu dt").on("click", function() {
+        $(this).next().slideToggle();
+        });
+        });
+    </script>
+
 </body>
 </html>
