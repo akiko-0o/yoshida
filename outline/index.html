@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/modaal.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
 </head>
 <body class="outline">
     <div class="hamburger" id="hamburger">
@@ -56,9 +59,22 @@
         <div class="out">
             <div class="out__box">
                 <img src="/assets/img/outline/yoshidaauto.svg" alt="ヨシダオートサービス">
-                <button class="out__btn">
-                    <a href="">ロゴに込めた想い</a>
-                </button>
+                <p>
+                    <a href="#modal" class="modal">Show</a>
+                </p>
+                <div class="modalwrapper">
+                    <h2>
+                        <img src="/assets/img/outline/logonikometa_03.png" alt="ロゴに込めた想い">
+                    </h2>
+
+                    <div id="modal" style="display:none;">
+                        <p>まず一番に、地域の皆さまと共に大阪No.1の企業としてあり続けたいという想いを込め、大阪への愛をマークに込めました。<br>
+                            その形は、お客様とのふれあいの積み重ねをイメージしています。<br>
+                            さらに「ヨシダオートサービス」という文字部分には、安心、安全、快適に感じてもらうため、そして、長くお付き合いできるような、優しく、しっかりとした安定感のあるオリジナルの書体を作りました。<br>
+                            ロゴを含めて、テーマカラーをオレンジで統一することで、活気あふれる職場、より良いサービスへの情熱も自分たちらしさとして表現しました。
+                        </p>
+                    </div>
+                </div>
             </div>
             <div  class="out__corporate">
                 <img src="/assets/img/outline/corporate.png" alt="企業情報">
@@ -429,6 +445,9 @@
             <a href="#slide" class="footer__arrow"></a>
         </div>
     </footer>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="../assets/js/common.js"></script> -->
+    <script src="../assets/js/modaal.min.js"></script>
     
 </body>
 </html>

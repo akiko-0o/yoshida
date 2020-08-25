@@ -127,6 +127,11 @@ html {
   width: 50%;
 }
 
+.footer li img {
+  padding-left: 10px;
+  border-left: 1px solid #ffffff;
+}
+
 .footer__sns {
   display: -webkit-box;
   display: -ms-flexbox;

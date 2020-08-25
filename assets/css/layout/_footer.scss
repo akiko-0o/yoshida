@@ -20,6 +20,10 @@
     }
     li {
         width: 50%;
+        img {
+            padding-left: 10px;
+            border-left: 1px solid #ffffff;
+        }
     }
 
     &__sns {
