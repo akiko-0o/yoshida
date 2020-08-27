@@ -1,0 +1,43 @@
+.morebtn>span {
+    display: inline-block;
+    padding-right: 40px;
+    position: relative;
+    vertical-align: baseline;
+    font-size: 13px;
+    font-weight: 700;
+    -webkit-transition: all .4s linear;
+    transition: all .4s linear;
+    font-size: 3.5vw;
+}
+.morebtn>span:after, .morebtn>span:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+.morebtn>span:before {
+    width: 15px;
+    border-top: 1px solid #000;
+    top: 50%;
+    right: 10px;
+}
+.morebtn>span:after {
+    width: 7px;
+    height: 7px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.morebtn>span:after, .morebtn>span:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}

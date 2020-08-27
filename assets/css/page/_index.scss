@@ -96,15 +96,14 @@ body.index {
 
         }
         .readmore_top {
-            position: absolute;
-            top: 102px;
-            right: 0;
-            color: $orange;
-            font-size: 14px;
-            font-weight: 600;
-            &::before {
-                content: "";
-            }
+            width: 100%;
+            padding-top: 5%;
+            background-repeat: no-repeat;
+            background-position: 100%;
+            background-size: contain;
+            background-image: url(/assets/img/index/readmore_03.png);
+            -webkit-transition: all .5s ease;
+            transition: all .5s ease;
         }
         &__list {
             display: block;
@@ -124,6 +123,50 @@ body.index {
                 width: 200px;            
             }
         }
+        .morebtn>span {
+            display: inline-block;
+            padding-right: 40px;
+            position: relative;
+            vertical-align: baseline;
+            font-size: 13px;
+            font-weight: 700;
+            -webkit-transition: all .4s linear;
+            transition: all .4s linear;
+            font-size: 3.5vw;
+        }
+        .morebtn>span:after, .morebtn>span:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            -webkit-transition: all .5s;
+            transition: all .5s;
+        }
+        .morebtn>span:before {
+            width: 15px;
+            border-top: 1px solid #000;
+            top: 50%;
+            right: 10px;
+        }
+        .morebtn>span:after {
+            width: 7px;
+            height: 7px;
+            border-bottom: 1px solid #000;
+            border-right: 1px solid #000;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .morebtn>span:after, .morebtn>span:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            -webkit-transition: all .5s;
+            transition: all .5s;
+        }
+
 
         &__img {
 
