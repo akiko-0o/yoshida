@@ -36,23 +36,27 @@ $(window).bind("scroll", function() {
 	}
 });
 
+{
+  const open = document.getElementById('open');
+  const close = document.getElementById('close');
+  const modal = document.getElementById('modal');
+  const mask = document.getElementById('mask');
 
-// $(function () {
-//   $('#openmodal').click(function(){
-//       $('#modalarea').fadeIn();
-//   });
-//   $('#closemodal , #modalbg').click(function(){
-//     $('#modalarea').fadeOut();
-//   });
-// });
+  open.addEventListener('click',() => {
+    modal.classList.remove('hidden');
+    mask.classList.remove('hidden');
+  });
 
+  close.addEventListener('click',() => {
+    modal.classList.add('hidden');
+    mask.classList.add('hidden');
+  });
 
-$('.modal').modaal({
-	animation_speed: '400', 	// アニメーションのスピードをミリ秒単位で指定
-	background: '#fff',	// 背景の色を白に変更
-	overlay_opacity: '0',	// 背景のオーバーレイの透明度を変更
-	loading_content: 'Now Loading, Please Wait.'	// 読み込み時のテキスト表示
-});
+  mask.addEventListener('click',() => {
+    modal.classList.add('hidden');
+    mask.classList.add('hidden');
+  });
+}
 
 
 });

@@ -19,25 +19,25 @@
             </div>
             <ul class="hamburger__nav">
                 <li>
-                    <a href="#">ホーム</a>
+                    <a href="/">ホーム</a>
                 </li>
                 <li>
-                    <a href="#">新着情報</a>
+                    <a href="../news/detail.html">新着情報</a>
                 </li>
                 <li>
-                    <a href="#">代表挨拶</a>
+                    <a href="../greeting/greeting.html">代表挨拶</a>
                 </li>
                 <li>
-                    <a href="#">企業情報</a>
+                    <a href="../outline/index.html">企業情報</a>
                 </li>
                 <li>
-                    <a href="#">事業紹介</a>
+                    <a href="../branding/branding.html">事業紹介</a>
                 </li>
                 <li>
-                    <a href="#">採用情報</a>
+                    <a href="../recruit/index.html">採用情報</a>
                 </li>
                 <li>
-                    <a href="#">問い合わせ</a>
+                    <a href="../contact/index.html">問い合わせ</a>
                 </li>
             </ul>
             <div class="hamburger__sns">
@@ -58,7 +58,7 @@
                 <img src="/assets/img/branding/servis_03.png" alt="事業紹介">
                 <p>軽未使用車を中心とした店舗販売をはじめ、お客様の求める"カーライフにあったらいいな"を<br>「軽の森」「車の森」「軽パーク」「マッハの車検」「新車市場」「ピッカーズ」「洗車の王様」「車流通革命」が全てワンストップで解決します。</p>
             </div>
-            　<ul>
+            　<ul class="bra__ul">
                 <li>
                     <div class="brandind_box">
                         <a href="">
@@ -127,7 +127,7 @@
                 <li>
                     <div class="brandind_box">
                         <a href="">
-                            <h4>
+                            <h4 class="picars">
                                 <img src="/assets/img/branding/logo_pickers01.svg" alt="ピッカーズ">
                             </h4>
                             <div class="bra__imgtenpo">
@@ -140,7 +140,7 @@
                 <li>
                     <div class="brandind_box">
                         <a href="">
-                            <h4>
+                            <h4 class="sensya">
                                 <img src="/assets/img/branding/logo_sensha01.svg" alt="洗車の王国">
                             </h4>
                             <div class="bra__imgtenpo">
@@ -150,10 +150,10 @@
                         </a>
                     </div>
                 </li>
-                <li>
+                <li class="kuruma">
                     <div class="brandind_box">
                         <a href="">
-                            <h4>
+                            <h4 class="kurumaryuutuu">
                                 <img src="/assets/img/branding/logo_ryutsu.svg" alt="車流通革命">
                             </h4>
                             <div class="bra__imgtenpo">
@@ -180,10 +180,12 @@
 
             <div class="bra__domain">
                 <h3>
-                    <img src="/assets/img/branding/domain_03.png" alt="">
+                    <img src="/assets/img/branding/domain_03.png" alt="事業ドメイン">
                 </h3>
-                <p>私たちが大切にしていることは"おもてなし"と"商品は心"。<br>ヨシダオートサービスとは、お客様との「信頼の輪」です。</p>
-                <img src="/assets/img/branding/domain_img.png" alt="">
+                <p>私たちが大切にしていることは"おもてなし"と"商品は心"。<br>ヨシダオートサービスのワンストップサービスとは、<br>お客様との「信頼の輪」です。</p>
+                <div class="bra__domain_img">
+                    <img src="/assets/img/branding/domain_img.png" alt="">
+                </div>
             </div>
 
             <div class="bra__shops">
@@ -191,21 +193,190 @@
                     <img src="/assets/img/branding/shops_06.png" alt="">
                 </h3>
                 <p>南大阪の「5人に1人」のかかりつけ医。<br>ヨシダオートサービスでは創業以来、南大阪に根差し、地域の皆様と共に成長することを心がけてきました。おかげさまで南大阪にお住まいの5人に1人の方にご利用いただけるまでになりました。</p>
-                <ul>
+                <ul class="bra__shops_ul">
                     <li>
-                        <a href="">軽の森　なかもず店</a>
+                        <div id="open">
+                            軽の森　なかもず店
+                        </div>
+                        <div id="mask" class="hidden"></div>
+                        <section id="modal" class="hidden">
+                            <hr class="u__line">
+                            <div class="modal__inner">
+                                <h3>
+                                    <span>軽未使用車販売</span>
+                                    <div class="modal__flex">
+                                        <h4 class="modal__flex_1">
+                                            <img src="/assets/img/branding/logo_keinomori01.svg" alt="">
+                                        </h4>
+                                        <h4 class="modal__flex_2">
+                                            <img src="/assets/img/branding/letter@2x.png" alt="">
+                                        </h4>
+                                    </div>
+                                </h3>                                        
+                                <p class="shop__title">
+                                    軽の森　なかもず店
+                                </p>
+                                <p>〒591-8025</p>
+                                <p>TEL:0800-830-3329</p>
+                                <p>FAX:072-240-0804</p>
+                                <div class="btn__flex">
+                                    <a href="/greeting/greeting.html" class="modalbtn">
+                                        <span>
+                                            店舗地図
+                                        </span>
+                                    </a>
+                                    <a href="/greeting/greeting.html" class="modalbtn">
+                                        <span>
+                                            店内風景
+                                        </span>
+                                    </a>
+                                </div>
+                                <div id="close">
+                                    ✖️
+                                </div>
+                            </div>
+                        </section>
                     </li>
                     <li>
-                        <a href="">軽の森　泉北店</a>
+                        <div id="open">
+                            軽の森　泉北店
+                        </div>
+                        <div id="mask" class="hidden"></div>
+                        <section id="modal" class="hidden">
+                            <hr class="u__line">
+                            <div class="modal__inner">
+                                <h3>
+                                    <span>軽未使用車販売</span>
+                                    <div class="modal__flex">
+                                        <h4 class="modal__flex_1">
+                                            <img src="/assets/img/branding/logo_keinomori01.svg" alt="">
+                                        </h4>
+                                        <h4 class="modal__flex_2">
+                                            <img src="/assets/img/branding/letter@2x.png" alt="">
+                                        </h4>
+                                    </div>
+                                </h3>                                        
+                                <p class="shop__title">
+                                    軽の森　なかもず店
+                                </p>
+                                <p>〒591-8025</p>
+                                <p>TEL:0800-830-3329</p>
+                                <p>FAX:072-240-0804</p>
+                                <div class="btn__flex">
+                                    <a href="/greeting/greeting.html" class="modalbtn">
+                                        <span>
+                                            店舗地図
+                                        </span>
+                                    </a>
+                                    <a href="/greeting/greeting.html" class="modalbtn">
+                                        <span>
+                                            店内風景
+                                        </span>
+                                    </a>
+                                </div>
+                                <div id="close">
+                                    ✖️
+                                </div>
+                            </div>
+                        </section>
                     </li>
                     <li>
-                        <a href="">軽の森　富田林店</a>
+                        <div id="open">
+                            軽の森　富田林店
+                        </div>
+                        <div id="mask" class="hidden"></div>
+                        <section id="modal" class="hidden">
+                            <p>こんちはこんちはこんちはこんちはこんちは</p>
+                            <div id="close">
+                                ✖️
+                            </div>
+                        </section>
                     </li>
                     <li>
-                        <a href="">軽の森　泉大津店</a>
+                        <div id="open">
+                            軽の森 泉大津店
+                        </div>
+                        <div id="mask" class="hidden"></div>
+                        <section id="modal" class="hidden">
+                            <hr class="u__line">
+                            <div class="modal__inner">
+                                <h3>
+                                    <span>軽未使用車販売</span>
+                                    <div class="modal__flex">
+                                        <h4 class="modal__flex_1">
+                                            <img src="/assets/img/branding/logo_keinomori01.svg" alt="">
+                                        </h4>
+                                        <h4 class="modal__flex_2">
+                                            <img src="/assets/img/branding/letter@2x.png" alt="">
+                                        </h4>
+                                    </div>
+                                </h3>                                        
+                                <p class="shop__title">
+                                    軽の森　なかもず店
+                                </p>
+                                <p>〒591-8025</p>
+                                <p>TEL:0800-830-3329</p>
+                                <p>FAX:072-240-0804</p>
+                                <div class="btn__flex">
+                                    <a href="/greeting/greeting.html" class="modalbtn">
+                                        <span>
+                                            店舗地図
+                                        </span>
+                                    </a>
+                                    <a href="/greeting/greeting.html" class="modalbtn">
+                                        <span>
+                                            店内風景
+                                        </span>
+                                    </a>
+                                </div>
+                                <div id="close">
+                                    ✖️
+                                </div>
+                            </div>
+                        </section>
                     </li>
                     <li>
-                        <a href="">車の森　もず店</a>
+                        <div id="open">
+                            軽の森　もず店
+                        </div>
+                        <div id="mask" class="hidden"></div>
+                        <section id="modal" class="hidden">
+                            <hr class="u__line">
+                            <div class="modal__inner">
+                                <h3>
+                                    <span>軽未使用車販売</span>
+                                    <div class="modal__flex">
+                                        <h4 class="modal__flex_1">
+                                            <img src="/assets/img/branding/logo_keinomori01.svg" alt="">
+                                        </h4>
+                                        <h4 class="modal__flex_2">
+                                            <img src="/assets/img/branding/letter@2x.png" alt="">
+                                        </h4>
+                                    </div>
+                                </h3>                                        
+                                <p class="shop__title">
+                                    軽の森　なかもず店
+                                </p>
+                                <p>〒591-8025</p>
+                                <p>TEL:0800-830-3329</p>
+                                <p>FAX:072-240-0804</p>
+                                <div class="btn__flex">
+                                    <a href="/greeting/greeting.html" class="modalbtn">
+                                        <span>
+                                            店舗地図
+                                        </span>
+                                    </a>
+                                    <a href="/greeting/greeting.html" class="modalbtn">
+                                        <span>
+                                            店内風景
+                                        </span>
+                                    </a>
+                                </div>
+                                <div id="close">
+                                    ✖️
+                                </div>
+                            </div>
+                        </section>
                     </li>
                     <li>
                         <a href="">車の森　なかもず店</a>
@@ -245,7 +416,15 @@
                     </li>
                 </ul>
             </div>
+            <div class="table__back">
+                <a href="/">
+                    <img src="/assets/img/news/news_foot_06.png" alt="back">
+                </a>
+            </div>
         </div>
+    </div>
+    <div class="table__en">
+        <img src="/assets/img/branding/service_11.png" alt="service">
     </div>
 
     <footer class="footer">
@@ -255,37 +434,37 @@
         <ul>
             <li>
                 <a href="/">
-                    <img src="/assets/img/index/home.svg" alt="">
+                    <img src="/assets/img/index/home.svg" alt="ホーム">
                 </a>
             </li>
             <li>
-                <a href="">
-                    <img src="/assets/img/index/shinchakuwhite.svg" alt="">
+                <a href="../news/detail.html">
+                    <img src="/assets/img/index/shinchakuwhite.svg" alt="新着情報">
                 </a>
             </li>
             <li>
-                <a href="">
-                    <img src="/assets/img/index/aisatuwhite.svg" alt="">
+                <a href="../greeting/greeting.html">
+                    <img src="/assets/img/index/aisatuwhite.svg" alt="代表挨拶">
                 </a>
             </li>
             <li>
-                <a href="">
-                    <img src="/assets/img/index/kigyouwhite.svg" alt="">
+                <a href="../outline/index.html">
+                    <img src="/assets/img/index/kigyouwhite.svg" alt="企業情報">
                 </a>
             </li>
             <li>
-                <a href="">
-                    <img src="/assets/img/index/zigyouwhite.svg" alt="">
+                <a href="../branding/branding.html">
+                    <img src="/assets/img/index/zigyouwhite.svg" alt="事業情報">
                 </a>
             </li>
             <li>
-                <a href="">
-                    <img src="/assets/img/index/saiyouwhite.svg" alt="">
+                <a href="/recruit/index.html">
+                    <img src="/assets/img/index/saiyouwhite.svg" alt="採用情報">
                 </a>
             </li>
             <li>
-                <a href="">
-                    <img src="/assets/img/index/contactwhite.svg" alt="">
+                <a href="../contact/index.html">
+                    <img src="/assets/img/index/contactwhite.svg" alt="問い合わせ">
                 </a>
             </li>
         </ul>
@@ -301,6 +480,9 @@
             <a href="#slide" class="footer__arrow"></a>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/assets/js/common.js"></script>
     
 </body>
 </html>

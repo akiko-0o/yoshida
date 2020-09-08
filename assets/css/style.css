@@ -101,6 +101,11 @@ html {
   background-color: #808080;
 }
 
+.footer__inner {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
 .footer__img {
   padding-top: 60px;
   padding-bottom: 30px;
@@ -120,7 +125,7 @@ html {
 }
 
 .footer ul img {
-  width: 50%;
+  width: 55%;
 }
 
 .footer li {
@@ -140,6 +145,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .footer__sns img {
@@ -153,7 +159,6 @@ html {
   color: #ffffff;
   font-size: 12px;
   font-weight: 550;
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -894,43 +899,64 @@ body.index .recruit__en img {
   margin-bottom: 20px;
 }
 
-.branding .bra ul {
+.branding .bra .bra__ul {
   position: relative;
 }
 
-.branding .bra ul li::after {
+.branding .bra .bra__ul .kuruma::after {
+  right: 0;
+  top: 15px;
+  width: 25vw;
+  border-top: 2px solid #ea5514;
+  border-right: 2px solid #ea5514;
+  content: "";
+  height: 95%;
+  position: absolute;
+  z-index: 0;
+}
+
+.branding .bra .bra__ul li {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.branding .bra .bra__ul li:last-child {
+  margin-bottom: 100px;
+}
+
+.branding .bra .bra__ul li::after {
   right: 0;
   top: 15px;
   width: 38vw;
   border-top: 2px solid #ea5514;
   border-right: 2px solid #ea5514;
   content: "";
-  height: 100%;
+  height: 95%;
   position: absolute;
   z-index: 0;
 }
 
-.branding .bra ul li p {
+.branding .bra .bra__ul li p {
   margin: 0 auto;
   width: 270px;
   font-size: 12.5px;
   line-height: 1.5em;
   letter-spacing: 0.05em;
   font-weight: 550;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
-.branding .bra ul a {
+.branding .bra .bra__ul a {
   position: relative;
   display: block;
   width: 100%;
-  height: 340px;
+  height: 320px;
   color: black;
   border-bottom: 2px solid #EA5513;
   padding: 50px 0px;
 }
 
-.branding .bra ul a::before {
+.branding .bra .bra__ul a::before {
   content: "";
   position: absolute;
   left: 0;
@@ -943,14 +969,191 @@ body.index .recruit__en img {
           box-sizing: border-box;
 }
 
-.branding .bra ul a h4 {
+.branding .bra .bra__ul a h4 {
   position: absolute;
   left: 40px;
   top: 0;
 }
 
-.branding .bra ul a h4 img {
+.branding .bra .bra__ul a h4 img {
   width: 90%;
+}
+
+.branding .bra__domain h3 {
+  margin-bottom: 30px;
+}
+
+.branding .bra__domain p {
+  font-size: 12.5px;
+  line-height: 1.5em;
+  font-weight: 550;
+  margin-bottom: 30px;
+}
+
+.branding .bra__domain_img img {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.branding .bra__shops h3 {
+  margin-bottom: 20px;
+}
+
+.branding .bra__shops p {
+  font-size: 12.5px;
+  line-height: 1.5em;
+  font-weight: 550;
+  margin-bottom: 30px;
+  letter-spacing: 0.05em;
+}
+
+.branding .bra__shops_ul #open {
+  font-size: 22px;
+  padding: 10px 20px 10px;
+}
+
+.branding .bra__shops_ul #open::before {
+  right: 5vw;
+  bottom: 7px;
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: 5%;
+  margin: auto;
+  z-index: 1;
+}
+
+.branding .bra__shops_ul #open::after {
+  right: 5vw;
+  top: 3px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  margin: auto;
+  z-index: 1;
+}
+
+.branding .bra__shops_ul #mask {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.branding .bra__shops_ul #modal {
+  background-image: url(/assets/img/index/bg_paper01.png);
+  width: 330px;
+  height: 330px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-transition: -webkit-transform 0.01s;
+  transition: -webkit-transform 0.01s;
+  transition: transform 0.01s;
+  transition: transform 0.01s, -webkit-transform 0.01s;
+  z-index: 99;
+}
+
+.branding .bra__shops_ul #modal h3 {
+  font-size: 11px;
+  margin-top: 30px;
+}
+
+.branding .bra__shops_ul #mask.hidden {
+  display: none;
+}
+
+.branding .bra__shops_ul #modal.hidden {
+  -webkit-transform: translate(-500px, -500px);
+          transform: translate(-500px, -500px);
+}
+
+.branding .bra__shops_ul .modal__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.branding .bra__shops_ul .modal__flex_1 img {
+  padding-top: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+.branding .bra__shops_ul .modal__inner {
+  padding: 0 20px;
+}
+
+.branding .bra__shops_ul .modal__inner p {
+  margin: 0;
+}
+
+.branding .bra__shops_ul .btn__flex {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.branding .bra__shops_ul li {
+  position: relative;
+  border-bottom: 1px dotted #000000;
+}
+
+.branding .bra__shops_ul li:last-child {
+  margin-bottom: 120px;
+}
+
+.branding .bra__shops_ul a {
+  display: block;
+  color: #000000;
+  font-size: 22px;
+  padding: 10px 20px 10px;
+}
+
+.branding .kurumaryuutuu {
+  width: 210px;
+  padding-right: 20px;
+}
+
+.branding .sensya {
+  width: 160px;
+  padding-right: 20px;
+}
+
+.branding .picars {
+  width: 120px;
+}
+
+.branding .table__back img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.branding .table__en img {
+  width: 80%;
+  float: right;
+}
+
+.branding .footer {
+  clear: both;
 }
 
 .gretting h3 {
