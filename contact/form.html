@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>問い合わせ</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="form">
+    <div class="hamburger" id="hamburger">
+        <a class="hamburger__button" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <nav class="hamburger__wrap">
+            <div class="hamburger__logo">
+                <img src="/assets/img/index/yoshida_logo.png" alt="">
+            </div>
+            <ul class="hamburger__nav">
+                <li>
+                    <a href="/">ホーム</a>
+                </li>
+                <li>
+                    <a href="../news/detail.html">新着情報</a>
+                </li>
+                <li>
+                    <a href="../greeting/greeting.html">代表挨拶</a>
+                </li>
+                <li>
+                    <a href="../outline/index.html">企業情報</a>
+                </li>
+                <li>
+                    <a href="../branding/branding.html">事業紹介</a>
+                </li>
+                <li>
+                    <a href="../recruit/index.html">採用情報</a>
+                </li>
+                <li>
+                    <a href="../contact/index.html">問い合わせ</a>
+                </li>
+            </ul>
+            <div class="hamburger__sns">
+                <img src="/assets/img/index/insta.svg" alt="インスタグラム">
+                <img src="/assets/img/index/fasebook.svg" alt="フェイスブック">
+            </div>
+            <a href="" class="hamburger__privacy">プライバシーポリシー</a>
+        </nav>
+    </div>
+    <hr class="u__line">
+    <div class="fom">
+        <div class="inner">
+            <div class="fom__flex">
+                <h2>
+                    <img src="/assets/img/contact/otoiawase.svg"alt="問い合わせ">
+                </h2>
+                <img src="/assets/img/contact/letter.png" alt="">
+            </div>
+
+            <div class="fom__form">
+                <p class="fom__form_p">ヨシダオートサービスへのお問い合わせ</p>
+                <form action="" method="POST">
+                    <div class="fom__post">
+                        <div class="fom__post_title">
+                            <label for="rendou">ご氏名<span>(必須)</span></label>
+                        </div>
+                        <div class="fom__post_input">
+                            <input id="rendou" type="text"name="yourname"placeholder="例：吉田太郎">
+                        </div>
+                    </div>
+                    <div class="fom__post">
+                        <div class="fom__post_title">
+                            <label for="rendou">ふりがな<span>(必須)</span></label>
+                        </div>
+                        <div class="fom__post_input">
+                            <input id="rendou" type="text" name="yourname"placeholder="例：よしだたろう">
+                        </div>
+                    </div>
+                    <div class="fom__post">
+                        <div class="fom__post_title">
+                            <label for="num">郵便番号</label>
+                        </div>
+                        <div class="fom__post_input yubin">
+                            <input class="fom__post" id="rendou" type="number" name="yourname"placeholder="例：1234567"><button class="fom__post_button">〒住所自動入力</button>   
+                        </div>
+                    </div>
+                    <div class="fom__post">
+                        <div class="fom__post_title">
+                            <label for="rendou">都道府県</label>
+                        </div>
+                        <div class="fom__post_input">
+                            <input id="rendou" type="text" name="yourname"placeholder="例：東京都">
+                        </div>
+                    </div>
+                    <div class="fom__post">
+                        <div class="fom__post_title">
+                            <label for="rendou">市区町村</label>
+                        </div>
+                        <div class="fom__post_input">
+                            <input id="rendou" type="text" name="yourname"placeholder="例：品川区芝浦">
+                        </div>
+                    </div>
+                    <div class="fom__post">
+                        <div class="fom__post_title">
+                            <label for="rendou">番地以下の住所</label>
+                        </div>
+                        <div class="fom__post_input">
+                            <input id="rendou" type="text" name="yourname"placeholder="例：2-2-2 ○×マンション501号室">    
+                        </div>
+                    </div>
+                    <div class="fom__post">
+                        <div class="fom__post_title">
+                            <p>返信方法<span>（必須）</span></p>
+                        </div>
+                        <div class="fom__post_input hensin">
+                            <input id="tel" type="checkbox" name="sport" value="電話"><label for="tel">電話</label>
+                            <input id="mail" type="checkbox" name="sport" value="メール"><label for="baseball">メール</label>
+                            <input id="tel2" type="checkbox" name="sport" value="携帯番号"><label for="basketball">携帯電話</label><br>
+                            <input id="fax" type="checkbox" name="sport" value="FAX"><label for="basketball">FAX</label>    
+                        </div>
+                        <label>連絡時間帯：
+                            <select name="time">
+                                <option value="10">10:00</option>
+                                <option value="12">12:00</option>
+                                <option value="14">14:00</option>
+                                <option value="16">16:00</option>
+                                <option value="18">18:00</option>
+                                <option value="20">20:00</option>
+                              </select>
+                        </label>
+                        <label>~
+                            <select name="time">
+                                <option value="12">12:00</option>
+                                <option value="14">14:00</option>
+                                <option value="16">16:00</option>
+                                <option value="18">18:00</option>
+                                <option value="20">20:00</option>
+                                <option value="21">21:00</option>
+                              </select>
+                        </label>
+                    </div>
+                    <div class="fom__post">
+                        <div class="fom__post_title">
+                            <label for="mail">メールアドレス<span>(必須)</span></label>
+                        </div>
+                        <div class="fom__post_input">
+                            <input id="rendou" type="email" name="yourname"placeholder="例：sample@sample.com">
+                        </div>
+                    </div>
+                    <div class="fom__post">
+                        <div class="fom__post_title">
+                            <label for="num">電話番号<span>(必須)</span></label>
+                        </div>
+                        <div class="fom__post_input">
+                            <input id="rendou" type="text" name="tel"placeholder="例：03-0000-0000">     
+                        </div>
+                    </div>
+                    <div class="fom__post">
+                        <div class="fom__post_title">
+                            <label for="num">携帯番号</label>
+                        </div>
+                        <div class="fom__post_input">
+                            <input id="rendou" type="text" name="yourname"placeholder="例：090-0000-0000">
+                        </div>
+                    </div>
+                    <div class="fom__post">
+                        <div class="fom__post_title">
+                            <label for="num">FAX</label>
+                        </div>
+                        <div class="fom__post_input">
+                            <input id="rendou" type="text" name="yourname"placeholder="例：03-0000-0000">     
+                        </div>
+                    </div>
+                    <div class="fom__post">
+                        <div class="fom__post_title">
+                            <label for="rendou">ご職業</label>
+                        </div>
+                        <div class="fom__post_input">
+                            <input id="rendou" type="text" name="yourname"placeholder="例：自動車販売員">
+                        </div>
+                    </div>
+                    <div class="fom__post">
+                        <div class="fom__post_title">
+                            <label for="rendou">現在お乗りのお車</label>
+                        </div>
+                        <div class="fom__post_input">
+                            <input id="rendou" type="text" name="yourname"placeholder="例：フォルクスワーゲン（クロスポロ）"> 
+                        </div>
+
+                    </div>
+                    <div class="fom__post">
+                        <div class="fom__post_title">
+                            <label for="comment">お問い合わせ内容</label>
+                        </div>
+                        <div class="fom__post_input">
+                            <textarea id="comment" name="comment"></textarea> 
+                        </div>
+                    </div>
+                    <div class="fom__post">
+                        <div class="fom__post_input privacy">
+                            <input type="checkbox"id="check1" name="level" value="ok">
+                            <p>
+                                <a href="">プライバシーポリシー</a>を確認し、<br>個人情報の取り扱いに同意します。
+                            </p>
+                        </div>
+                    </div>
+                </form>
+                <button class="fom__list">
+                    <a href="" class="morebtn">
+                    <span>確認</span>
+                    </a>
+                </button>
+            </div>
+
+    
+            <div class="table__back">
+                <a href="/">
+                    <img src="/assets/img/news/news_foot_06.png" alt="back">
+                </a>
+            </div>
+        </div>
+            <div class="gre__en">
+                <img src="/assets/img/contact/contact2.svg" alt="contact">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__img">
+            <img src="/assets/img/index/yoshida_logo.png" alt="ヨシダオートサービス">
+        </div>
+        <ul>
+            <li>
+                <a href="/">
+                    <img src="/assets/img/index/home.svg" alt="ホーム">
+                </a>
+            </li>
+            <li>
+                <a href="../news/detail.html">
+                    <img src="/assets/img/index/shinchakuwhite.svg" alt="新着情報">
+                </a>
+            </li>
+            <li>
+                <a href="../greeting/greeting.html">
+                    <img src="/assets/img/index/aisatuwhite.svg" alt="代表挨拶">
+                </a>
+            </li>
+            <li>
+                <a href="../outline/index.html">
+                    <img src="/assets/img/index/kigyouwhite.svg" alt="企業情報">
+                </a>
+            </li>
+            <li>
+                <a href="../branding/branding.html">
+                    <img src="/assets/img/index/zigyouwhite.svg" alt="事業情報">
+                </a>
+            </li>
+            <li>
+                <a href="../recruit/index.html">
+                    <img src="/assets/img/index/saiyouwhite.svg" alt="採用情報">
+                </a>
+            </li>
+            <li>
+                <a href="../contact/index.html">
+                    <img src="/assets/img/index/contactwhite.svg" alt="問い合わせ">
+                </a>
+            </li>
+        </ul>
+
+        <div class="footer__sns">
+            <img src="/assets/img/index/insta.svg" alt="インスタグラム">
+            <img src="/assets/img/index/fasebook.svg" alt="フェイスブック">
+        </div>
+        <a href="">プライバシーポリシー</a>
+        <span>&copy;YOSHIDA AUTO SERVICE ALL Rights Reserved</span>
+
+        <div class="footer__box">
+            <a href="#slide" class="footer__arrow"></a>
+        </div>
+    </footer>
+    
+</body>
+</html>

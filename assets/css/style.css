@@ -1128,6 +1128,40 @@ body.index .recruit__en img {
   padding: 10px 20px 10px;
 }
 
+.branding .bra__shops_ul a::before {
+  right: 5vw;
+  bottom: 7px;
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: 5%;
+  margin: auto;
+  z-index: 1;
+}
+
+.branding .bra__shops_ul a::after {
+  right: 5vw;
+  top: 3px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  margin: auto;
+  z-index: 1;
+}
+
 .branding .kurumaryuutuu {
   width: 210px;
   padding-right: 20px;
@@ -1153,6 +1187,103 @@ body.index .recruit__en img {
 }
 
 .branding .footer {
+  clear: both;
+}
+
+.contact .con__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .con__flex img {
+  width: 100%;
+  margin-top: 130px;
+  margin-bottom: 70px;
+}
+
+.contact .con__btn {
+  margin-bottom: 50px;
+}
+
+.contact .con .table__back img {
+  width: 100%;
+}
+
+.contact .con .modalbtn {
+  border: 1px solid #000000;
+  display: block;
+  position: relative;
+  width: 320px;
+  text-align: center;
+  text-decoration: none;
+  color: #1B1B1B;
+  border: 1px solid #1B1B1B;
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 10px 50px;
+}
+
+.contact .con .modalbtn a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+}
+
+.contact .con .modalbtn a::after {
+  width: 7px;
+  height: 7px;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 0;
+  right: 40px;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  display: inline-block;
+  position: absolute;
+}
+
+.contact .con .modalbtn span::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  width: 15px;
+  border-top: 1px solid #000;
+  top: 50%;
+  right: 50px;
+}
+
+.contact .con dt {
+  font-size: 12px;
+  font-weight: 550;
+  margin-bottom: 10px;
+}
+
+.contact .con dl {
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+  border-bottom: 2px dotted #808080;
+}
+
+.contact .con dl:nth-last-child(1) {
+  border: none;
+}
+
+.contact .con .gre__en {
+  width: 70%;
+  float: right;
+}
+
+.contact .con .table__back {
+  margin-bottom: 120px;
+}
+
+.contact .footer {
   clear: both;
 }
 
@@ -1670,5 +1801,161 @@ body.slick span {
   color: black;
   line-height: 2.2em;
   padding-bottom: 50px;
+}
+
+.form .fom__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form .fom__flex img {
+  width: 100%;
+  margin-top: 130px;
+  margin-bottom: 70px;
+}
+
+.form .fom__list {
+  width: 100%;
+  display: block;
+  position: relative;
+  width: 270px;
+  text-align: center;
+  text-decoration: none;
+  color: #1B1B1B;
+  border: 1px solid #1B1B1B;
+  margin: 20px auto;
+  margin-bottom: 56px;
+  background-color: transparent;
+  padding: 6px;
+}
+
+.form .fom__list a {
+  text-decoration: none;
+  color: #000000;
+  width: 200px;
+}
+
+.form .fom__list span {
+  font-size: 16px;
+}
+
+.form .fom__form_p {
+  font-size: 12px;
+  letter-spacing: 0.07em;
+  font-weight: 550;
+  padding-bottom: 15px;
+  border-bottom: 1px dotted #888888;
+}
+
+.form .fom__post {
+  border-bottom: 1px dotted #888888;
+  font-weight: 550;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.form .fom__post:nth-child(n+14) {
+  border: none;
+}
+
+.form .fom__post input {
+  width: 320px;
+  height: 40px;
+}
+
+.form .fom__post textarea {
+  width: 320px;
+  height: 140px;
+}
+
+.form .fom__post .privacy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  margin: 0 auto;
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+.form .fom__post .privacy input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.form .fom__post .hensin input {
+  width: 20px;
+  height: 20px;
+}
+
+.form .fom__post .hensin input tel::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid #e95412;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.form .fom__post .yubin {
+  position: relative;
+}
+
+.form .fom__post .yubin input {
+  width: 170px;
+  height: 40px;
+  border: 1px solid #888888;
+}
+
+.form .fom__post .yubin button {
+  position: absolute;
+  top: 5px;
+}
+
+.form .fom__post span {
+  color: #EA5513;
+  margin-left: 10px;
+}
+
+.form .fom__post a {
+  color: #EA5513;
+}
+
+.form .fom__post_title {
+  padding-bottom: 20px;
+}
+
+.form .fom__post_button {
+  background-color: #EA5513;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 550;
+  border: none;
+  padding: 4px 10px;
+  margin-left: 20px;
+}
+
+.form .fom .gre__en {
+  width: 70%;
+  float: right;
+}
+
+.form .fom .table__back {
+  margin-bottom: 120px;
+}
+
+.form .fom .table__back img {
+  width: 100%;
+}
+
+.form .fom .footer {
+  clear: both;
 }
 /*# sourceMappingURL=style.css.map */

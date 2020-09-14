@@ -242,38 +242,38 @@
                     color: $black;
                     font-size: 22px;
                     padding: 10px 20px 10px;
-                    // &::before {
-                    //     right: 5vw;
-                    //     bottom: 7px;
-                    //     content: "";
-                    //     display: inline-block;
-                    //     width: 8px;
-                    //     height: 1px;
-                    //     background-color: #000;
-                    //     position: absolute;
-                    //     top: 0;
-                    //     -webkit-transform: rotate(45deg);
-                    //     transform: rotate(45deg);
-                    //     right: 5%;
-                    //     margin: auto;
-                    //     z-index: 1;
-                    // }
-                    // &::after {
-                    //     right: 5vw;
-                    //     top: 3px;
-                    //     -webkit-transform: rotate(-45deg);
-                    //     transform: rotate(-45deg);
-                    //     content: "";
-                    //     display: inline-block;
-                    //     width: 8px;
-                    //     height: 1px;
-                    //     background-color: #000;
-                    //     position: absolute;
-                    //     bottom: 0;
-                    //     right: 5%;
-                    //     margin: auto;
-                    //     z-index: 1;
-                    // }
+                    &::before {
+                        right: 5vw;
+                        bottom: 7px;
+                        content: "";
+                        display: inline-block;
+                        width: 8px;
+                        height: 1px;
+                        background-color: #000;
+                        position: absolute;
+                        top: 0;
+                        -webkit-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                        right: 5%;
+                        margin: auto;
+                        z-index: 1;
+                    }
+                    &::after {
+                        right: 5vw;
+                        top: 3px;
+                        -webkit-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
+                        content: "";
+                        display: inline-block;
+                        width: 8px;
+                        height: 1px;
+                        background-color: #000;
+                        position: absolute;
+                        bottom: 0;
+                        right: 5%;
+                        margin: auto;
+                        z-index: 1;
+                    }
                 }
             }
 
